@@ -1,0 +1,34 @@
+[
+  {
+    "id": "1",
+    "name": "Strix G15",
+    "description": "(16 GB/512 GB SSD/Windows 10 Home/4 GB Graphics/GTX 1650 Ti/144 Hz) ",
+    "price": 84990,
+    "image": "zephyrus.jpeg",
+    "qty": 0
+  },
+  {
+    "id": "2",
+    "name": "M1",
+    "description": "M1 Chip(8 GB/256 GB SSD/Mac OS Big Sur/13.3 inch/Space Grey/ 1.29 kg)",
+    "price": 92000,
+    "image": "m1.jpeg",
+    "qty": 0
+  },
+  {
+    "id": "3",
+    "name": "HP 15s",
+    "description": "Ryzen 3 Dual Core 3250U - (8 GB/1 TB HDD/Windows 10 Home)",
+    "price": 34990,
+    "image": "hp.jpeg",
+    "qty": 0
+  },
+  {
+    "id": "4",
+    "name": "Lenovo",
+    "description": "Core i3 10th Gen - (8 GB/1 TB HDD/Windows 10 Home)",
+    "price": 33990,
+    "image": "lenovo.jpeg",
+    "qty": 0
+  }
+]
