@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-import { Navbar, Products, Cart, Checkout, OrderConfirmation, Login } from './components';
+import { Navbar, Products, Cart, Checkout, OrderConfirmation } from './components';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
 import productData from './data/feeds.json'
@@ -37,9 +37,6 @@ function App() {
         <Navbar badgeVal={cart.length} />
         <Switch>
           <Route exact path='/'>
-            <Login login={login} />
-          </Route>
-          <Route exact path='/store'>
             <Products products={products} onAddToCart={handleAddToCart} />
           </Route>
           <Route exact path='/cart'>

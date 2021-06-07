@@ -19,7 +19,7 @@ const Cart = ({ cart, onAddToCart, onRemoveFromCart }) => {
   const EmptyCart = () => (
     <Typography variant="subtitle1">
       You have no items in your shopping cart,
-      <Link to="/store" className={classes.link}>start adding some</Link>
+      <Link to="/" className={classes.link}>start adding some</Link>
     </Typography>
   );
 

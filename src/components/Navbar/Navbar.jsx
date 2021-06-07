@@ -10,25 +10,23 @@ function Navbar({ badgeVal }) {
   const location = useLocation()
   return (
     <>
-      {location.pathname !== '/' && (
-        <AppBar position="fixed" className={classes.appBar} color="inherit">
-          <Toolbar>
-            <Typography component={Link} to='/' variant="h6" className={classes.title} color="inherit">
-              Laptop Store
+      <AppBar position="fixed" className={classes.appBar} color="inherit">
+        <Toolbar>
+          <Typography component={Link} to='/' variant="h6" className={classes.title} color="inherit">
+            Laptop Store
                 </Typography>
-            <div className={classes.grow} />
-            {location.pathname === '/store' && (
-              <div className={classes.button}>
-                <IconButton component={Link} to='/cart' aria-label="Show cart items" color="inherit">
-                  <Badge badgeContent={badgeVal} color="secondary">
-                    <ShoppingCart />
-                  </Badge>
-                </IconButton>
-              </div>
-            )}
-          </Toolbar>
-        </AppBar>
-      )}
+          <div className={classes.grow} />
+          {location.pathname === '/' && (
+            <div className={classes.button}>
+              <IconButton component={Link} to='/cart' aria-label="Show cart items" color="inherit">
+                <Badge badgeContent={badgeVal} color="secondary">
+                  <ShoppingCart />
+                </Badge>
+              </IconButton>
+            </div>
+          )}
+        </Toolbar>
+      </AppBar>
     </>
   );
 }
